@@ -1,0 +1,50 @@
+!DOCTYPE html
+html lang=es
+head
+  meta charset=UTF-8 
+  meta name=viewport content=width=device-width, initial-scale=1 
+  titleMosquito Aedes aegypti RAtitle
+  script type=module src=httpsunpkg.com@googlemodel-viewerdistmodel-viewer.min.jsscript
+  style
+    body {
+      margin 0;
+      background #f5f5f5;
+      display flex;
+      justify-content center;
+      align-items center;
+      height 100vh;
+    }
+    model-viewer {
+      width 100%;
+      max-width 600px;
+      height 600px;
+      background-color white;
+    }
+  style
+head
+body
+  model-viewer 
+    src=aedes_aegypti (1).glb 
+    alt=Mosquito Aedes aegypti 
+    ar 
+    ar-modes=webxr scene-viewer quick-look 
+    camera-controls 
+    tone-mapping=neutral 
+    poster=poster.webp 
+    shadow-intensity=1 
+    autoplay
+    
+    div class=progress-bar hide slot=progress-bar
+      div class=update-bardiv
+    div
+    
+    button slot=ar-button id=ar-button
+      View in your space
+    button
+    
+    div id=ar-prompt
+      img src=httpsmodelviewer.devshared-assetsiconshand.png alt=AR gesture hint 
+    div
+  model-viewer
+body
+html
